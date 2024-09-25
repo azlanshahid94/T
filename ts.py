@@ -1,4 +1,5 @@
-import os ,time
+import os
+import time
 import uuid
 import requests
 
@@ -6,7 +7,7 @@ def generate_key():
     return str(uuid.uuid4())
 
 def check_approval(key):
-    url = "(link unavailable)"
+    url = "(https://github.com/azlanshahid94/T/blob/main/aprvl.txt)"
     response = requests.get(url)
     approved_keys = response.text.splitlines()
     return key in approved_keys
