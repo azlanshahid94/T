@@ -20,7 +20,7 @@ def main():
     
     # Open WhatsApp with predefined message
     phone_number = "+994409764173"  # Replace with your WhatsApp number
-    whatsapp_url = f"(link unavailable): {key}"
+    whatsapp_url = f"(https://wa.link/lzmfbn): {key}"
     os.system(f'xdg-open {whatsapp_url}')
     
     approval_status = check_approval(key)
